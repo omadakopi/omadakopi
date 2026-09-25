@@ -123,15 +123,15 @@
     <!-- Script Interaktif JavaScript -->
     <script>
         // Ganti dengan Nomor WhatsApp Kasir/Toko Anda (Gunakan format 62)
-        const NOMOR_WHATSAPP = "6285861753740";
+        const NOMOR_WHATSAPP = "6281234567890";
 
         // Data Menu Produk
         const dataMenu = [
             { id: 1, nama: "Sego Ndog", kategori: "makanan", harga: 13000, deskripsi: "Sambal Matah Dengan Telur Krispy.", gambar: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=400&q=80" },
             { id: 2, nama: "Mie Nyemek", kategori: "makanan", harga: 15000, deskripsi: ".", gambar: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=400&q=80" },
             { id: 3, nama: "Onion Ring", kategori: "camilan", harga: 13000, deskripsi: "Pastry renyah bergaya Prancis dengan isian cokelat leleh.", gambar: "https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=400&q=80" },
-            { id: 4, nama: "Cireng", kategori: "camilan", harga: 13000, deskripsi: "Teh hijau khas Jepang berkualitas premium yang creamy.", gambar: "https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=400&q=80" },
-            { id: 5, nama: "French Fried", kategori: "camilan", harga: 13000, deskripsi: "Roti tebal dipanggang dengan mentega dan taburan keju melimpah.", gambar: "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=400&q=80" },
+            { id: 4, nama: "Espresso", kategori: "minuman", harga: 13000, deskripsi: "Teh hijau khas Jepang berkualitas premium yang creamy.", gambar: "https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=400&q=80" },
+            { id: 5, nama: "Americano", kategori: "minuman", harga: 18000, deskripsi: "Roti tebal dipanggang dengan mentega dan taburan keju melimpah.", gambar: "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=400&q=80" },
 			{ id: 6, nama: "Kopsu Pandan", kategori: "minuman", harga: 18000, deskripsi: "Espresso espresso pilihan dipadukan dengan susu segar dan gula aren asli.", gambar: "https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=400&q=80" },
 			{ id: 7, nama: "Kopsu Aren", kategori: "minuman", harga: 18000, deskripsi: "Espresso espresso pilihan dipadukan dengan susu segar dan gula aren asli.", gambar: "https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=400&q=80" },
 			{ id: 8, nama: "Butterscoth", kategori: "minuman", harga: 18000, deskripsi: "Espresso espresso pilihan dipadukan dengan susu segar dan gula aren asli.", gambar: "https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=400&q=80" },
@@ -148,20 +148,20 @@
 			{ id: 19, nama: "Lycee Tea", kategori: "minuman", harga: 13000, deskripsi: "Espresso espresso pilihan dipadukan dengan susu segar dan gula aren asli.", gambar: "https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=400&q=80" },
 			{ id: 20, nama: "Tropical Bluberry", kategori: "minuman", harga: 15000, deskripsi: "Espresso espresso pilihan dipadukan dengan susu segar dan gula aren asli.", gambar: "https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=400&q=80" },
 			{ id: 21, nama: "Tropical Strawberry", kategori: "minuman", harga: 15000, deskripsi: "Espresso espresso pilihan dipadukan dengan susu segar dan gula aren asli.", gambar: "https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=400&q=80" },
-			{ id: 22, nama: "V60", kategori: "minuman", harga: 20000, deskripsi: "Espresso espresso pilihan dipadukan dengan susu segar dan gula aren asli.", gambar: "https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=400&q=80" },
+			{ id: 22, nama: "Tropical Lychee", kategori: "minuman", harga: 15000, deskripsi: "Espresso espresso pilihan dipadukan dengan susu segar dan gula aren asli.", gambar: "https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=400&q=80" },
 			{ id: 23, nama: "Japanese", kategori: "minuman", harga: 20000, deskripsi: "Espresso espresso pilihan dipadukan dengan susu segar dan gula aren asli.", gambar: "https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=400&q=80" },
-			{ id: 24, nama: "Vietnam Drip", kategori: "minuman", harga: 15000, deskripsi: "", gambar: "https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=400&q=80" },
+			{ id: 24, nama: "V60", kategori: "minuman", harga: 20000, deskripsi: "", gambar: "https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=400&q=80" },
 			{ id: 25, nama: "Kopi Tubruk", kategori: "minuman", harga: 10000, deskripsi: "Espresso espresso pilihan dipadukan dengan susu segar dan gula aren asli.", gambar: "https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=400&q=80" },
 			{ id: 26, nama: "Kopsu Tubruk", kategori: "minuman", harga: 13000, deskripsi: "Espresso espresso pilihan dipadukan dengan susu segar dan gula aren asli.", gambar: "https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=400&q=80" },
-			{ id: 27, nama: "Tropical Lychee", kategori: "minuman", harga: 15000, deskripsi: "Espresso espresso pilihan dipadukan dengan susu segar dan gula aren asli.", gambar: "https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=400&q=80" },
+			{ id: 27, nama: "Vietnam Drip", kategori: "minuman", harga: 15000, deskripsi: "Espresso espresso pilihan dipadukan dengan susu segar dan gula aren asli.", gambar: "https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=400&q=80" },
 			{ id: 28, nama: "Summer Dream", kategori: "minuman", harga: 20000, deskripsi: "Espresso espresso pilihan dipadukan dengan susu segar dan gula aren asli.", gambar: "https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=400&q=80" },
 			{ id: 29, nama: "Berrry Cano", kategori: "minuman", harga: 20000, deskripsi: "Espresso espresso pilihan dipadukan dengan susu segar dan gula aren asli.", gambar: "https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=400&q=80" },
-			{ id: 30, nama: "Tahu Walik", kategori: "camilan", harga: 13000, deskripsi: "Espresso espresso pilihan dipadukan dengan susu segar dan gula aren asli.", gambar: "https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=400&q=80" },
-			{ id: 31, nama: "Pangsit", kategori: "camilan", harga: 15000, deskripsi: "Espresso espresso pilihan dipadukan dengan susu segar dan gula aren asli.", gambar: "https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=400&q=80" },
+			{ id: 30, nama: "Cireng", kategori: "camilan", harga: 13000, deskripsi: "Espresso espresso pilihan dipadukan dengan susu segar dan gula aren asli.", gambar: "https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=400&q=80" },
+			{ id: 31, nama: "French Fried", kategori: "camilan", harga: 13000, deskripsi: "Espresso espresso pilihan dipadukan dengan susu segar dan gula aren asli.", gambar: "https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=400&q=80" },
 			{ id: 32, nama: "Mix Platter", kategori: "camilan", harga: 15000, deskripsi: "Espresso espresso pilihan dipadukan dengan susu segar dan gula aren asli.", gambar: "https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=400&q=80" },
-			{ id: 33, nama: "Espresso", kategori: "minuman", harga: 12000, deskripsi: "Espresso espresso pilihan dipadukan dengan susu segar dan gula aren asli.", gambar: "https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=400&q=80" },
-			{ id: 34, nama: "Americano", kategori: "minuman", harga: 18000, deskripsi: "Espresso espresso pilihan dipadukan dengan susu segar dan gula aren asli.", gambar: "https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=400&q=80" },
-			{ id: 35, nama: "Mendoan", kategori: "camilan", harga: 10000, deskripsi: "Espresso espresso pilihan dipadukan dengan susu segar dan gula aren asli.", gambar: "https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=400&q=80" },
+			{ id: 33, nama: "Tahu Walik", kategori: "camilan", harga: 13000, deskripsi: "Espresso espresso pilihan dipadukan dengan susu segar dan gula aren asli.", gambar: "https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=400&q=80" },
+			{ id: 34, nama: "Pangsit", kategori: "camilan", harga: 13000, deskripsi: "Espresso espresso pilihan dipadukan dengan susu segar dan gula aren asli.", gambar: "https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=400&q=80" },
+			{ id: 35, nama: "Mendoan", kategori: "camilan", harga: 10000, deskripsi: "Espresso espresso pilihan dipadukan dengan susu segar dan gula aren asli.", gambar: "https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=400&q=80" }
         ];
 
         // State Penyimpanan Keranjang & Catatan
